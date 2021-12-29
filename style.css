@@ -1,0 +1,129 @@
+/* custom CSS varaibles */
+:root{
+    /* fonts */
+    --headings-font: 'Open Sans', sans-serif;
+    --body-font:'Poppins', Arial, Helvetica, sans-serif;
+    /* colors */
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --white:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--body-font);
+}
+.attribution {
+    margin: 1em auto;
+    font-size: 11px;
+    text-align: center;
+    }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* global styles  */
+.app-wrapper{
+    text-align: center;
+}
+.app-wrapper img{
+    width: 100%;
+}    
+.btn{
+    margin: 2em auto;
+    padding: .5em 2em;
+    border-radius: 20px;
+    color:var(--white);
+    background-color: var(--pink);
+    transition: .3s;
+}
+.btn:hover{
+    opacity: .6;
+}
+
+/* header section */
+.header{
+    padding: 1em;
+    /* position: relative; */
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.navigation .logo,.navigation .try-btn{
+    /* position: absolute; */
+    top: 1em;
+}
+
+.navigation .logo {
+    left: 1em;
+    text-align: left;
+    width: 100px;
+}
+.navigation .try-btn{
+    margin: 0;
+    right: 1em;
+    color: var(--very-dark-cyan);
+    background-color: var(--white);
+}
+
+/* main section component */
+.component{
+    margin: 2em 1em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 2px #ddd;
+}
+
+.component .component-title{
+    margin: 2em auto 1em; 
+}
+.component .component-text{
+    color:var(--grayish-blue);
+}
+.main .build-comunity {
+    padding: 2em 1em 0;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px solid black;
+    transform: translateY(150px);
+}
+/* footer */
+.footer{
+    padding: 8em 1em 2em;
+    text-align: left;
+    color: #fff;
+    background-color: var(--very-dark-cyan);
+}
+.footer img{
+    margin: 1em 1em 1em 0;
+    width: 20px;
+    display: inline-block;
+}
+
+.footer .contact .location .location-text{
+    /* display: inline-block; */
+}
+
+/* footer navigation */
+.footer nav ul li{
+    margin: 1em 0;
+    list-style: none;
+}
+.footer nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.footer nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+/* .footer .socials .copy{
+    margin: 0 auto;
+    text-align: center;
+} */
